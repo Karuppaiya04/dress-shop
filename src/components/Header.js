@@ -86,6 +86,39 @@ function Header() {
           </svg>
           Cart
         </Link>
+        {/* Profile Section */}
+        <div className="relative group ml-0 md:ml-4">
+          <button className="flex items-center space-x-2 focus:outline-none">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Profile"
+              className="w-8 h-8 rounded-full border-2 border-white shadow"
+            />
+            <span className="hidden sm:inline font-semibold">Profile</span>
+            <svg
+              className="w-4 h-4 ml-1"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div className="absolute right-0 mt-2 w-40 bg-white text-gray-800 rounded-lg shadow-lg py-2 z-50 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-300">
+            <div className="px-4 py-2 border-b">Hello, User!</div>
+            <button className="w-full text-left px-4 py-2 hover:bg-blue-50">
+              My Orders
+            </button>
+            <button className="w-full text-left px-4 py-2 hover:bg-blue-50">
+              Logout
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
   );
